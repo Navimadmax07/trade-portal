@@ -174,7 +174,7 @@
   font-size: 1.4rem;
 }
 
-/* Export Path/Milestones */
+/* Dashboard1 (main content) styles only */
 .export-path {
   background: #fff;
   border-radius: 20px;
@@ -182,14 +182,12 @@
   padding: 2rem;
   margin-top: 1rem;
 }
-
 .milestones {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
   justify-content: space-between;
 }
-
 .milestone {
   flex: 1;
   background: #f4f6fa;
@@ -221,19 +219,17 @@
   background: #fff;
   color: #4285c4;
 }
-
-/* Milestone details/modules */
 .milestone-details {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 0;
   margin-right: auto;
   border-radius: 10px;
-  padding: 1.5rem 2rem;    /* Increase/decrease for size */
-  font-size: 1.1rem;       /* Adjust for text size */
+  padding: 1.5rem 2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 1px 4px rgba(32, 64, 94, 0.05);
-  width: 400px;            /* Set a fixed or max width */
+  width: 400px;
   max-width: 100%;
 }
 .milestone-details h2 {
@@ -254,6 +250,44 @@
   font-weight: 500;
   box-shadow: 0 1px 4px rgba(32, 64, 94, 0.05);
 }
+.milestone-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #222;
+  transition: color 0.2s;
+}
+.milestone-icon.selected,
+.milestone:hover .milestone-icon {
+  color: #fff;
+}
+.milestone-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.milestone-title.purple { color: #000000; }
+.milestone-title.green { color: #000000; }
+.milestone-title.blue { color: #000000; }
+.milestone-title.orange { color: #000000; }
+.milestone-btn {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.milestone-btn.purple { background: #000000; }
+.milestone-btn.green { background: #000000; }
+.milestone-btn.blue { background: #000000; }
+.milestone-btn.orange { background: #000000; }
 
 /* Sidebar toggle button */
 .sidebar-toggle {
@@ -325,4 +359,6 @@
     gap: 1rem;
   }
   .modules {
-    flex-direction: column;}}
+    flex-direction: column;
+  }
+}

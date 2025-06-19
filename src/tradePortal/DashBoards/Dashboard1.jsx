@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Dashboard1-clean.css';
+// import './Dashboard1-clean.css';
 import { FaRegBuilding, FaRocket, FaMoneyCheckAlt, FaFlagCheckered } from 'react-icons/fa';
 
 function DashBoard1() {
