@@ -270,6 +270,41 @@
   color: #4285c4;
 }
 
+/* Sidebar button styles */
+.sidebar-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  margin: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+  font: inherit;
+}
+.sidebar-btn:focus,
+.sidebar-btn:hover {
+  background: #4285c4;
+  outline: none;
+}
+.sidebar-nav li.active .sidebar-btn {
+  background: #4285c4;
+}
+
+/* Only milestone icon and relevant dashboard content styles */
+.milestone-svg {
+  font-size: 2rem; /* smaller icon size */
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Responsive styles */
 @media (max-width: 900px) {
   .dashboard-container {
@@ -291,46 +326,3 @@
   }
   .modules {
     flex-direction: column;}}
-    /* ...existing code... */
-
-/* Milestone icons and titles */
-.milestone-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  color: #222; /* Default icon color: black */
-  transition: color 0.2s;
-}
-.milestone-icon.selected,
-.milestone:hover .milestone-icon {
-  color: #fff; /* White when selected or hovered */
-}
-.milestone-title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  text-align: center;
-}
-.milestone-title.purple { color: #000000; }
-.milestone-title.green { color: #000000; }
-.milestone-title.blue { color: #000000; }
-.milestone-title.orange { color: #000000; }
-.milestone-btn {
-  width: 100%;
-  padding: 0.7rem 0;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.2s;
-}
-.milestone-btn.purple { background: #000000; }
-.milestone-btn.green { background: #000000; }
-.milestone-btn.blue { background: #000000; }
-.milestone-btn.orange { background: #000000; }
-
-/* ...rest of your CSS remains unchanged... */

@@ -1,0 +1,52 @@
+/* Navbar styles */
+.top-bar {
+  width: 100%;
+  height: 64px;
+  background: #e4e9ec;
+  color: #20405e;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: #20405e;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  outline: none;
+  transition: color 0.2s;
+}
+.sidebar-toggle:focus {
+  color: #4285c4;
+}
+.quick-access,
+.quick-help {
+  margin-right: 2rem;
+  font-weight: 600;
+  color: #20405e;
+}
+.subscription-info {
+  background: #e3f0fb;
+  color: #20405e;
+  padding: 0.5rem 1.2rem;
+  border-radius: 15px;
+  font-weight: 500;
+  margin-left: auto;
+}
+.user-avatar {
+  background: #20405e;
+  color: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+}
